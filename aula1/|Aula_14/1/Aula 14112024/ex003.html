@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    let num = parseInt(prompt("Qual combustivel você quer: \n 1 gasolina \n 2 etanol"))
+    let continuar;
+    do {
+    switch(num){
+        case 1:
+            let quantidade = parseInt(prompt("Quantos litros são? "))
+            alert(`O valor total de ${quantidade} litros de gasolina é ${quantidade * 5.8}`)
+            break
+        case 2:
+            let quantidade2 = parseInt(prompt("Quantos litros são? "))
+        alert(`O valor total de ${quantidade2} litros de etanol é ${quantidade2 * 4.2}`)
+            break
+        default:
+            alert("Você digitou errado, escolha outro valor")
+            break
+    }
+    } while (continuar === "sim");
+
+</script>
